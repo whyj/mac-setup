@@ -1,2 +1,5 @@
 # mac-setup
-Setup files for Mac OS, including dotfiles, list of installed apps, etc.
+Setup files for macOS, including:
+* Bash dot-files
+* List of installed apps from Brew and Conda
+* etc.
