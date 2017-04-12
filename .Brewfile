@@ -23,6 +23,7 @@ brew 'cocoapods'
 brew 'libyaml'
 brew 'docker-cloud'
 brew 'docker-gen'
+brew 'ffmpeg', args: ['with-libvorbis', 'with-sdl2', 'with-theora']
 brew 'gmp'
 brew 'isl'
 brew 'mpfr'
