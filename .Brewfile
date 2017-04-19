@@ -76,8 +76,8 @@ mas 'Pages', id: 409201541
 mas 'Pixelmator', id: 407963104
 mas 'QREncoder', id: 452695239
 mas 'Slack', id: 803453959
+mas 'Telegram Desktop', id: 946399090
 mas 'The Unarchiver', id: 425424353
 mas 'TNEF's Enough', id: 986621173
-mas 'Veertu', id: 1024069033
 mas 'WeatherBug', id: 1059074180
 mas 'Xcode', id: 497799835
