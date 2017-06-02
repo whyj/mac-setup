@@ -2,9 +2,9 @@
 #
 _license                  1.1                      py36_1  
 alabaster                 0.7.10                   py36_0  
-anaconda                  custom                   py36_0  
+anaconda                  4.4.0               np112py36_0  
 anaconda-client           1.6.3                    py36_0  
-anaconda-navigator        1.5.3                    py36_0  
+anaconda-navigator        1.6.2                    py36_0  
 anaconda-project          0.6.0                    py36_0  
 appnope                   0.1.0                    py36_0  
 appscript                 1.0.1                    py36_0  
@@ -20,7 +20,7 @@ bleach                    1.5.0                    py36_0
 bokeh                     0.12.5                   py36_1  
 boto                      2.46.1                   py36_0  
 boto3                     1.4.4                    py36_0  
-botocore                  1.5.47                   py36_0  
+botocore                  1.5.58                   py36_0  
 bottleneck                1.2.1               np112py36_0  
 cffi                      1.10.0                   py36_0  
 chardet                   3.0.3                    py36_0  
@@ -42,6 +42,7 @@ dask                      0.14.3                   py36_1
 datashape                 0.5.4                    py36_0  
 decorator                 4.0.11                   py36_0  
 dill                      0.2.6                    py36_0  
+distributed               1.16.3                   py36_0  
 docutils                  0.13.1                   py36_0  
 entrypoints               0.2.2                    py36_1  
 et_xmlfile                1.0.1                    py36_0  
@@ -60,7 +61,7 @@ icu                       54.1                          0
 idna                      2.5                      py36_0  
 imagesize                 0.7.1                    py36_0  
 ipykernel                 4.6.1                    py36_0  
-ipython                   6.0.0                    py36_1  
+ipython                   5.3.0                    py36_0  
 ipython_genutils          0.2.0                    py36_0  
 ipywidgets                6.0.0                    py36_0  
 isort                     4.2.5                    py36_0  
@@ -97,7 +98,9 @@ mkl                       2017.0.1                      0
 mkl-service               1.1.2                    py36_3  
 mock                      2.0.0                    py36_0  
 mpmath                    0.19                     py36_1  
+msgpack-python            0.4.8                    py36_0  
 multipledispatch          0.4.9                    py36_0  
+navigator-updater         0.1.0                    py36_0  
 nbconvert                 5.1.1                    py36_0  
 nbformat                  4.3.0                    py36_0  
 networkx                  1.11                     py36_0  
@@ -141,9 +144,10 @@ pyflakes                  1.5.0                    py36_0
 pygments                  2.2.0                    py36_0  
 pygpu                     0.6.4                    py36_0  
 pylint                    1.6.4                    py36_1  
+pyodbc                    4.0.16                   py36_0  
 pyopenssl                 17.0.0                   py36_0  
 pyparsing                 2.1.4                    py36_0  
-pyqt                      5.6.0                    py36_2  
+pyqt                      5.6.0                    py36_1  
 pytables                  3.3.0               np112py36_0  
 pytest                    3.0.7                    py36_0  
 python                    3.6.1                         2  
@@ -177,12 +181,15 @@ sip                       4.18                     py36_0
 six                       1.10.0                   py36_0  
 snowballstemmer           1.2.1                    py36_0  
 sockjs-tornado            1.0.3                    py36_0  
+sortedcollections         0.5.3                    py36_0  
+sortedcontainers          1.5.7                    py36_0  
 sphinx                    1.5.6                    py36_0  
 spyder                    3.1.4                    py36_0  
 sqlalchemy                1.1.9                    py36_0  
 sqlite                    3.13.0                        0  
 statsmodels               0.8.0               np112py36_0  
 sympy                     1.0                      py36_0  
+tblib                     1.3.2                    py36_0  
 tensorflow                1.0.0                    py36_0    conda-forge
 terminado                 0.6                      py36_0  
 testpath                  0.3                      py36_0  
@@ -190,9 +197,10 @@ theano                    0.9.0                    py36_0
 tk                        8.5.18                        0  
 toolz                     0.8.2                    py36_0  
 tornado                   4.5.1                    py36_0  
-tqdm                      4.11.2                   py36_0  
+tqdm                      4.14.0                   py36_0  
 traitlets                 4.3.2                    py36_0  
 unicodecsv                0.14.1                   py36_0  
+unixodbc                  2.3.4                         0  
 wcwidth                   0.1.7                    py36_0  
 werkzeug                  0.12.2                   py36_0  
 wheel                     0.29.0                   py36_0  
@@ -204,4 +212,5 @@ xlwings                   0.10.4                   py36_0
 xlwt                      1.2.0                    py36_0  
 xz                        5.2.2                         1  
 yaml                      0.1.6                         0  
+zict                      0.1.2                    py36_0  
 zlib                      1.2.8                         3  

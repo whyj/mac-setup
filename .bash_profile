@@ -41,6 +41,7 @@ mac-setup-save() {
 
 # Upgrade all bottles in brew, cleanup, and save status to mac-setup
 mac-setup-update-brew() {
+  source activate brew
   brew upgrade
   brew cleanup
   brew bundle dump --force --file="$MAC_SETUP_PATH/.Brewfile"
@@ -48,6 +49,7 @@ mac-setup-update-brew() {
 
 # Upgrade all packages in conda and save status to mac-setup
 mac-setup-update-conda() {
+  source deactivate
   pip install -U --no-deps pydub python_speech_features kur
   rm -fr "$HOME/Library/Caches/pip"
   conda update -y --all
