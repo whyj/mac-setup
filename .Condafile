@@ -29,7 +29,7 @@ click                     6.7                      py36_0
 cloudpickle               0.2.2                    py36_0  
 clyent                    1.2.2                    py36_0  
 colorama                  0.3.9                    py36_0  
-conda                     4.3.21                   py36_0  
+conda                     4.3.22                   py36_0  
 conda-env                 2.6.0                         0  
 configobj                 5.0.6                    py36_0  
 contextlib2               0.5.5                    py36_0  
