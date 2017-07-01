@@ -17,6 +17,10 @@ export LANG=en_US.UTF-8
 # make Anaconda the default python
 export PATH="$HOME/anaconda/bin:$PATH"
 
+# add NAO Python SDK to path
+export PYTHONPATH="${PYTHONPATH}:$HOME/pynaoqi"
+export DYLD_LIBRARY_PATH="${DYLD_LIBRARY_PATH}:$HOME/pynaoqi"
+
 # add Go to the path
 export PATH=$PATH:/usr/local/opt/go/libexec/bin:/~/gocode/bin
 export GOPATH=~/gocode
