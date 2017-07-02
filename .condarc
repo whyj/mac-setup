@@ -1,5 +1,5 @@
 channels:
-  - defaults
   - conda-forge
+  - defaults
   - anaconda
   - pypi
