@@ -57,6 +57,8 @@ mac-setup-update-conda() {
   pip install -U --no-deps pydub python_speech_features kur
   rm -fr "$HOME/Library/Caches/pip"
   conda update -y --all
+  conda update -y tensorflow
+  conda clean -pty
   conda list > "$MAC_SETUP_PATH/.Condafile"
   cp -f "$HOME/.condarc" "$MAC_SETUP_PATH/.condarc"
 }
