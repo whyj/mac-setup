@@ -14,22 +14,32 @@ alias hostip="curl ip.appspot.com; echo"
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 
-# make Anaconda the default python
-export PATH="$HOME/anaconda/bin:$PATH"
-
 # add NAO Python SDK to path
 export PYTHONPATH="${PYTHONPATH}:$HOME/pynaoqi"
 export DYLD_LIBRARY_PATH="${DYLD_LIBRARY_PATH}:$HOME/pynaoqi"
 
 # add Go to the path
-export PATH=$PATH:/usr/local/opt/go/libexec/bin:/~/gocode/bin
+export PATH="$PATH:/usr/local/opt/go/libexec/bin:/~/gocode/bin"
 export GOPATH=~/gocode
 
-# for shims and autocompletion
+# enable Shims and Autocompletion
 if which jenv > /dev/null; then eval "$(jenv init -)"; fi
 if [ -f $(brew --prefix)/etc/bash_completion ]; then
-. $(brew --prefix)/etc/bash_completion
+  . $(brew --prefix)/etc/bash_completion
 fi
+
+pyenv-init() {
+  if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
+  if which pyenv-virtualenv-init > /dev/null; then eval "$(pyenv virtualenv-init -)"; fi
+}
+
+# add brew and manually installed python versions to pyenv
+pyenv-add-outsiders() {
+  for i in `ls $(brew --cellar python)/`; do
+    ln -s $(brew --cellar python)/$i $(pyenv root)/versions/brew-$i;
+  done
+  ln -s "$HOME/anaconda" "$(pyenv root)/versions/anaconda"
+}
 
 # Mac-Setup scripts
 MAC_SETUP_PATH="$HOME/repos/mac-setup"
@@ -225,6 +235,3 @@ function iterm2_print_user_vars() {
   iterm2_set_user_var gitStatus "$(get-git-status '' ' < ' '\n' '')"
   #iterm2_set_user_var gitBranch $((git status --porcelain -b 2> /dev/null) | head -n1 | cut -c4- | sed 's/\.\.\./</')
 }
-
-# added by Anaconda3 4.3.1 installer
-export PATH="/Users/j.ylipaavalniemi/anaconda/bin:$PATH"
